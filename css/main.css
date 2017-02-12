@@ -17,7 +17,7 @@ Website Colours: List colour hex codes here for reference
 
 /* ---- CSS RESET --------------------------- */
 * {
-  margin: 0;
+  margin: 1;
   padding: 0;
   box-sizing: border-box;
 }
@@ -147,9 +147,9 @@ header {
 footer {
   border-top: 1px solid rgb(245,245,245);
 }
+
 footer nav a {
-  display: block;
-  padding: 0.5em;
+  padding: 0.5em 1em;
 }
 
 footer nav .fa,
@@ -157,6 +157,17 @@ footer nav .fa,
   padding: 0 1em 0 0;
 }
 
+.footer-nav {
+  text-align: center;
+}
+
+.footer-logo {
+  width: auto;
+  height: 60px;
+  display: inline-block;
+  margin-right: 10%;
+
+}
 .pure-drawer { /* pop-out hamburger menu */
   padding: 5em 3%;
 }
@@ -389,7 +400,6 @@ header .logo {
 /* social nav */
 .social-nav {
   text-align: right;
-  margin: 1em 0;
 }
 
 /* top nav */
@@ -407,5 +417,5 @@ header .logo {
 
 .contact-font {
   font-family: 'Courgette', cursive;
-  
+
 }
