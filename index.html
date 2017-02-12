@@ -5,164 +5,171 @@ meta-description: This is a starter blog + ecommerce template to fastrack your p
 featured-image_path: /uploads/pr-photos-6472.jpg
 ---
 
-  <!-- FIRST BANNER SECTION ---->
-  <section id="intro-banner" class="banner featured centered grid-middle">
+<!-- FIRST BANNER SECTION ---->
+<section id="intro-banner" class="banner featured centered grid-middle">
     <div class="col">
-      <h1 > Ashley Mana Yoga </h1>
-      <a class="button-inverted" href="/about"> Meet Ashley</a>
-      <a class="button-inverted" href="/blog"> Blog</a>
-  </div>
-  </section>
+        <h1> Ashley Mana Yoga </h1>
+        <a class="button-inverted" href="/about"> Meet Ashley</a>
+        <a class="button-inverted" href="/blog"> Blog</a>
+    </div>
+</section>
 
-  <section>
+<section>
     <!-- SECOND BANNER SECTION SHORT ABOUT ME  -->
     <div>
-      <h2> Meet Ashley</h2>
+        <h2> Meet Ashley</h2>
     </div>
 
     <!-- Set up your HTML -->
     <div class="grid">
-      <div class="col-6">
-        <div class="profile-imgs owl-carousel owl-theme">
-          <div class="item"><img src="/images/portrait1.jpg" alt="portrait"></div>
-          <div class="item"><img src="/images/portrait2.jpg" alt="portrait"> </div>
-          <div class="item"><img src="/images/portrait3.jpg" alt="portrait"></div>
-          <div class="item"><img src="/images/portrait1.jpg" alt="portrait"></div>
-          <div class="item"><img src="/images/portrait2.jpg" alt="portrait"> </div>
-          <div class="item"><img src="/images/portrait3.jpg" alt="portrait"></div>
+        <div class="col-6">
+            <div class="profile-imgs owl-carousel owl-theme">
+                <div class="item"><img src="/images/portrait1.jpg" alt="portrait"></div>
+                <div class="item"><img src="/images/portrait2.jpg" alt="portrait"> </div>
+                <div class="item"><img src="/images/portrait3.jpg" alt="portrait"></div>
+                <div class="item"><img src="/images/portrait1.jpg" alt="portrait"></div>
+                <div class="item"><img src="/images/portrait2.jpg" alt="portrait"> </div>
+                <div class="item"><img src="/images/portrait3.jpg" alt="portrait"></div>
+            </div>
         </div>
-      </div>
-    <div class="grid col-6">
-      <div>
-        <h2> title </h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a class="button-inverted buttoncenter"  href="#about"> Full story</a>
-      </div>
-    </div>
-  </section>
+        <div class="grid col-6">
+            <div>
+                <p>Ashley grew up in Saratoga Springs, NY, where she began practicing yoga in 2006 under the guidance of Yoga Therapist Arletta Behan. While growing up, Ashley’s mother brought her to yoga classes and over the years she she fell in love with
+                    the practice and started to become curious how to help people heal, both physically and emotionally. </p>
+
+                <p> Ashley’s curiosity and passion lead her to complete a 200-Hour Multi-Style Yoga Teacher Training through Hawaii Yoga Institute in May of 2014 under the guidance of Professional Integrative Yoga Therapist, Adria Pickett. In pursuit of creating
+                    a holistic healing modality,, in February 2016 Ashley completed her training as a Licensed Massage Therapist through Hawaii Healing Arts College. </p>
+
+                <p> Ashley leads a mindful class that incorporates her knowledge of anatomy & physiology, pranayama, meditation, mantra, mudras, Thai Massage, and spirituality. Her intention as a teacher is to help students connect to their mind, body, and
+                    soul and to honor their space for personal growth. Ashley’s classes allow her students to look deeper and listen to the divine within through self-awareness and the embodiment of yoga. </p>
+
+                <a class="button-inverted buttoncenter" href="#about"> Full story</a>
+            </div>
+        </div>
+</section>
 
 <!-- THIRD BANNER SECTION BLOG!  -->
-  <section id="blog">
+<section id="blog">
     <div>
-      <h2>Blog</h2>
+        <h2>Blog</h2>
 
-      <!-- add gridlex and linkable images with hover and padding -->
+        <!-- add gridlex and linkable images with hover and padding -->
 
-      <section class=" no padding featured">
-        <div class="grid blog-loop">
-          {% for post in site.posts limit:6 %}
-            <div class="col-4_sm-12">
-                <a href="{{post.url}}">
-                  <img src="{{post.image_path}}"> <!-- for consistent image sizes you will either need to crop the images beforehand or change this to divs with background images -->
-                  <h3> {{post.title}} </h3>
-                  <p class="post-meta">{{post.date | date_to_string }} | By {{post.author}}</p>
-                  <p> {{post.excerpt | truncate:100 }} </p>
-                </a>
-              </div>
-            {% endfor %}
-        </div>
-      </section>
-      <a class="button-inverted buttoncenter" href="blog.html"> More on the blog </a>
+        <section class=" no padding featured">
+            <div class="grid blog-loop margin-0-1">
+                {% for post in site.posts limit:6 %}
+                <div class="col-4_sm-12">
+                    <a href="{{post.url}}">
+                        <img src="{{post.image_path}}">
+                        <!-- for consistent image sizes you will either need to crop the images beforehand or change this to divs with background images -->
+                        <h3> {{post.title}} </h3>
+                        <p class="post-meta">{{post.date | date_to_string }} | By {{post.author}}</p>
+                        <p> {{post.excerpt | truncate:100 }} </p>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+        <a class="button-inverted buttoncenter" href="blog.html"> More on the blog </a>
 
     </div>
-  </section>
+</section>
 
-
-<!-- FOURTH CTA SECTION ---->
-  <section class="featured centered">
-    <h3> Subscribe Now - free content via email </h3>
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
-    <a class="button-inverted" href="#subscribe"> Subscribe </a>
-  </section>
 
 
 <!-- FITH ICON SERVICES GRID SECTION ---->
-  <section class="centered">
+<section class="centered">
     <h2> Services </h2>
     <div class="grid-equalHeight">
 
-      <div class="col-4_sm-12">
-        <i class="fa fa-snowflake-o"></i>
-        <h3> Private yoga sessions </h3>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
+        <div class="col-4_sm-12">
+            <i class="fa fa-leaf"></i>
+            <h3> Private Yoga Sessions </h3>
+            <p> Private sessions with Ashley provide individualized attention for students. Private sessions are a great way to work with special health concerns, injuries, or any other limitations you may experience. Private sessions are also a great option
+                if you are working towards a goal and need some help getting there. Whether you are new to yoga or want to deepen your practice, anyone and everyone can benefit from private yoga sessions.</p>
+        </div>
+
+        <div class="col-4_sm-12">
+            <i class="fa fa-leaf"></i>
+            <h3> Massage Therapy </h3>
+            <p> Ashley uses a combination of healing modalities for her clients holistic wellbeing. She specializes in deep tissue, clinical massage therapy, Thai yoga massage, prenatal, and relaxation.</p>
+        </div>
+
+        <div class="col-4_sm-12">
+            <i class="fa fa-leaf"></i>
+            <h3> Health and Lifestyle Coaching </h3>
+            <p> life is too short to live anything but an EXTRAORDINARY life. Through her commitment to a healthy lifestyle, hard work, and dedication, Ashley leads leaders to take ownership of their future lives with proven systems by being of service to others and helping people with their health and wellness. </p>
+        </div>
+
+        <div class="col-4_sm-12">
+            <i class="fa fa-leaf"></i>
+            <h3> Group Yoga Classes </h3>
+            <p> Ashley teaches various group classes on the island of Oahu. Group classes are the most affordable option for individuals seeking to create a steady practice and explore their yoga journey. Group classes allow individuals to be involved in
+                a yoga community as the students support each other on their own journeys through yoga. Group classes are usually 90 minutes long. </p>
+        </div>
+
+        <div class="col-4_sm-12">
+            <i class="fa fa-leaf"></i>
+            <h3> Thai Massage Workshops </h3>
+            <p>Are you ready to deepen your practice? Thai Yoga Massage Workshops are specialized classes that focus on balancing energy lines and thai yoga stretching. Workshops provide a in-depth experience, knowledge, and understanding of yoga which is not always
+                emphasized in group classes. Yoga workshops are usually two hours long. </p>
+        </div>
+
+        <div class="col-4_sm-12">
+            <i class="fa fa-leaf"></i>
+            <h3> Corporate Yoga </h3>
+            <p> Bringing yoga into your workplace strategically positions you as an employer to support your employees's well-being and to meet your deadlines. Offering yoga in the workplace enhances clarity and concentration while also cultivating a strong teamwork quality </p>
+        </div>
       </div>
+    </section>
 
-      <div class="col-4_sm-12">
-        <i class="fa fa-snowflake-o"></i>
-        <h3> Massage therapy </h3>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
-      </div>
-
-      <div class="col-4_sm-12">
-        <i class="fa fa-snowflake-o"></i>
-        <h3> Thai Massage Workshop </h3>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
-      </div>
-
-      <div class="col-4_sm-12">
-        <i class="fa fa-snowflake-o"></i>
-        <h3> Group style yoga classes </h3>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
-      </div>
-
-      <div class="col-4_sm-12">
-        <i class="fa fa-snowflake-o"></i>
-        <h3> Social Media Marketing </h3>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
-      </div>
-
-      <div class="col-4_sm-12">
-        <i class="fa fa-snowflake-o"></i>
-        <h3> Health + Lifestyle coaching </h3>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
-      </div>
-    </div> <!-- end of grid -->
-</section>
-
-<!-- SIXTH SECTION GALLERY & TESTIMONIALS ---->
-<section class="no-padding">
-  <div class="grid-equalHeight featured med-height">
-    <div class="col-6_sm-12 box-img testimonial1">
-      <!-- ADD BACKGROUND IMAGE -->
+        <!-- SIXTH SECTION GALLERY & TESTIMONIALS ---->
+        <section class="no-padding margin-auto">
+            <div class="grid-equalHeight featured med-height margin-0">
+                <div class="col-6_sm-12 box-img testimonial1">
+                    <!-- ADD BACKGROUND IMAGE -->
 
 
-    </div>
-    <div class="col-6_sm-12-middle">
-      <h2> Testimonial 1 </h2>
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
-    </div>
-  </div> <!-- end grid -->
+                </div>
+                <div class="col-6_sm-12-middle">
 
-  <div class="grid-equalHeight mob-flip med-height">
-    <div class="col-6_sm-12-middle">
-      <h2> testimonial 2 </h2>
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
-    </div>
-    <div class="col-6_sm-12 box-img testimonial2">
-      <!-- ADD BACKGROUND IMAGE -->
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
+                </div>
+            </div>
+            <!-- end grid -->
 
-    </div>
-  </div> <!-- end grid -->
+            <div class="grid-equalHeight mob-flip med-height margin-0">
+                <div class="col-6_sm-12-middle">
 
-  <div class="grid-equalHeight featured med-height">
-    <div class="col-6_sm-12 box-img testimonial3">
-      <!-- ADD BACKGROUND IMAGE -->
-      <!-- <img src="/images/testimonial3.jpg/"> -->
-    </div>
-    <div class="col-6_sm-12-middle">
-      <h2> testimonial 3 </h2>
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
-    </div>
-  </div> <!-- end grid -->
-</section>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
+                </div>
+                <div class="col-6_sm-12 box-img testimonial2">
+                    <!-- ADD BACKGROUND IMAGE -->
+
+                </div>
+            </div>
+            <!-- end grid -->
+
+            <div class="grid-equalHeight featured med-height margin-0">
+                <div class="col-6_sm-12 box-img testimonial3">
+                    <!-- ADD BACKGROUND IMAGE -->
+                    <!-- <img src="/images/testimonial3.jpg/"> -->
+                </div>
+                <div class="col-6_sm-12-middle">
+              
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
+                </div>
+            </div>
+            <!-- end grid -->
+        </section>
 
 
-<!-- SEVENTH SECTION CONTACT INFO -->
-<section class="centered">
-  <h2> Contact </h2>
-  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
+        <!-- SEVENTH SECTION CONTACT INFO -->
+        <section class="centered">
+            <h2> Contact </h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
 
-  {% include contact-form.html  %}
-</section>
+            {% include contact-form.html %}
+        </section>
 
-{% include instagram.html %}
+        {% include instagram.html %}
