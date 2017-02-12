@@ -1,0 +1,168 @@
+---
+layout: default
+title: IOC Starter Theme
+meta-description: This is a starter blog + ecommerce template to fastrack your projects.
+featured-image_path: /uploads/pr-photos-6472.jpg
+---
+
+  <!-- FIRST BANNER SECTION ---->
+  <section id="intro-banner" class="banner featured centered grid-middle">
+    <div class="col">
+      <h1 > Ashley Mana Yoga </h1>
+      <a class="button-inverted" href="/about"> Meet Ashley</a>
+      <a class="button-inverted" href="/blog"> Blog</a>
+  </div>
+  </section>
+
+  <section>
+    <!-- SECOND BANNER SECTION SHORT ABOUT ME  -->
+    <div>
+      <h2> Meet Ashley</h2>
+    </div>
+
+    <!-- Set up your HTML -->
+    <div class="grid">
+      <div class="col-6">
+        <div class="profile-imgs owl-carousel owl-theme">
+          <div class="item"><img src="/images/portrait1.jpg" alt="portrait"></div>
+          <div class="item"><img src="/images/portrait2.jpg" alt="portrait"> </div>
+          <div class="item"><img src="/images/portrait3.jpg" alt="portrait"></div>
+          <div class="item"><img src="/images/portrait1.jpg" alt="portrait"></div>
+          <div class="item"><img src="/images/portrait2.jpg" alt="portrait"> </div>
+          <div class="item"><img src="/images/portrait3.jpg" alt="portrait"></div>
+        </div>
+      </div>
+    <div class="grid col-6">
+      <div>
+        <h2> title </h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a class="button-inverted buttoncenter"  href="#about"> Full story</a>
+      </div>
+    </div>
+  </section>
+
+<!-- THIRD BANNER SECTION BLOG!  -->
+  <section id="blog">
+    <div>
+      <h2>Blog</h2>
+
+      <!-- add gridlex and linkable images with hover and padding -->
+
+      <section class=" no padding featured">
+        <div class="grid blog-loop">
+          {% for post in site.posts limit:6 %}
+            <div class="col-4_sm-12">
+                <a href="{{post.url}}">
+                  <img src="{{post.image_path}}"> <!-- for consistent image sizes you will either need to crop the images beforehand or change this to divs with background images -->
+                  <h3> {{post.title}} </h3>
+                  <p class="post-meta">{{post.date | date_to_string }} | By {{post.author}}</p>
+                  <p> {{post.excerpt | truncate:100 }} </p>
+                </a>
+              </div>
+            {% endfor %}
+        </div>
+      </section>
+      <a class="button-inverted buttoncenter" href="blog.html"> More on the blog </a>
+
+    </div>
+  </section>
+
+
+<!-- FOURTH CTA SECTION ---->
+  <section class="featured centered">
+    <h3> Subscribe Now - free content via email </h3>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
+    <a class="button-inverted" href="#subscribe"> Subscribe </a>
+  </section>
+
+
+<!-- FITH ICON SERVICES GRID SECTION ---->
+  <section class="centered">
+    <h2> Services </h2>
+    <div class="grid-equalHeight">
+
+      <div class="col-4_sm-12">
+        <i class="fa fa-snowflake-o"></i>
+        <h3> Private yoga sessions </h3>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
+      </div>
+
+      <div class="col-4_sm-12">
+        <i class="fa fa-snowflake-o"></i>
+        <h3> Massage therapy </h3>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
+      </div>
+
+      <div class="col-4_sm-12">
+        <i class="fa fa-snowflake-o"></i>
+        <h3> Thai Massage Workshop </h3>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
+      </div>
+
+      <div class="col-4_sm-12">
+        <i class="fa fa-snowflake-o"></i>
+        <h3> Group style yoga classes </h3>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
+      </div>
+
+      <div class="col-4_sm-12">
+        <i class="fa fa-snowflake-o"></i>
+        <h3> Social Media Marketing </h3>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
+      </div>
+
+      <div class="col-4_sm-12">
+        <i class="fa fa-snowflake-o"></i>
+        <h3> Health + Lifestyle coaching </h3>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
+      </div>
+    </div> <!-- end of grid -->
+</section>
+
+<!-- SIXTH SECTION GALLERY & TESTIMONIALS ---->
+<section class="no-padding">
+  <div class="grid-equalHeight featured med-height">
+    <div class="col-6_sm-12 box-img testimonial1">
+      <!-- ADD BACKGROUND IMAGE -->
+
+
+    </div>
+    <div class="col-6_sm-12-middle">
+      <h2> Testimonial 1 </h2>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
+    </div>
+  </div> <!-- end grid -->
+
+  <div class="grid-equalHeight mob-flip med-height">
+    <div class="col-6_sm-12-middle">
+      <h2> testimonial 2 </h2>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
+    </div>
+    <div class="col-6_sm-12 box-img testimonial2">
+      <!-- ADD BACKGROUND IMAGE -->
+
+    </div>
+  </div> <!-- end grid -->
+
+  <div class="grid-equalHeight featured med-height">
+    <div class="col-6_sm-12 box-img testimonial3">
+      <!-- ADD BACKGROUND IMAGE -->
+      <!-- <img src="/images/testimonial3.jpg/"> -->
+    </div>
+    <div class="col-6_sm-12-middle">
+      <h2> testimonial 3 </h2>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
+    </div>
+  </div> <!-- end grid -->
+</section>
+
+
+<!-- SEVENTH SECTION CONTACT INFO -->
+<section class="centered">
+  <h2> Contact </h2>
+  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
+
+  {% include contact-form.html  %}
+</section>
+
+{% include instagram.html %}
