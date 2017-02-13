@@ -223,13 +223,14 @@ a.category {
 .button-inverted:hover {
   font-weight: semi-bold;
 }
-
+/*used on homepage and blog post*/
 .buttoncenter {
   display: block;
   width: 20vw;
   margin: 4vh auto;
   text-align: center;
 }
+
 
 /*Testimonial Section*/
 .testimonial1 {
