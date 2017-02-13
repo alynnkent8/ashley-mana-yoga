@@ -437,6 +437,15 @@ header .logo {
 
 }
 
+/* about */
+.about-page {
+  padding: 10vh 5%;
+}
+
+.about-page h1 {
+  margin: 5% 0 0;
+}
+
 .about-padding {
   padding: 0 2em;
 }
