@@ -14,121 +14,200 @@ Website Colours: List colour hex codes here for reference
 */
 
 
-
 /* ---- CSS RESET --------------------------- */
+
 * {
-  margin: 1;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 1;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 img {
-  max-width: 100%; /* This ensures an image never breaks it's container */
+    max-width: 100%;
+    /* This ensures an image never breaks it's container */
 }
 
 h1 {
-  font-family: 'Kalam', cursive;
-  margin-top: 5vh
-    }
-
-[class*=grid-][class*=-equalHeight]>[class*=col] {
-  display:block;
-  /* This overrides a quirk with gridlex where contents inside of equal height containers become columns themselves */
+    font-family: 'Kalam', cursive;
+    margin-top: 5vh
 }
 
+[class*=grid-][class*=-equalHeight]>[class*=col] {
+    display: block;
+    /* This overrides a quirk with gridlex where contents inside of equal height containers become columns themselves */
+}
+
+
 /* ---- GENERAL HELPER CLASSES --------------------------- */
-.tall         { min-height:100vh; }
-.med-height   { min-height: 70vh; }
-.short        { min-height: 30vh; }
 
-.left         { text-align: left; }
-.centered     { text-align: center; }
-.right        { text-align: right center; }
+.tall {
+    min-height: 100vh;
+}
 
-.no-padding { padding: 0; }
+.med-height {
+    min-height: 70vh;
+}
 
-.mob-show { display: none;}
+.short {
+    min-height: 30vh;
+}
 
-.full-width { /* for image grids */
-  width:100%
+.left {
+    text-align: left;
+}
+
+.centered {
+    text-align: center;
+}
+
+.right {
+    text-align: right center;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.mob-show {
+    display: none;
+}
+
+.full-width {
+    /* for image grids */
+    width: 100%
 }
 
 
 /* ----- UNIVERSAL STYLES --------------------------- */
 
+
 /* Typography */
+
 body {
-  font-family: 'Work Sans'; /* Make sure you have added this font in the head of your HTML! */
-  color: rgb(60,60,65);
+    font-family: 'Work Sans';
+    /* Make sure you have added this font in the head of your HTML! */
+    color: rgb(60, 60, 65);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 1.1rem;
-}
-p {
-  margin-bottom: 1rem;
+    margin-bottom: 1.1rem;
 }
 
-h1 { font-size: 4.0rem; line-height: 1.2; }
-h2 { font-size: 3.0rem; line-height: 1.25; }
-h3 { font-size: 2.0rem; line-height: 1.3; }
-h4 { font-size: 1.8rem; line-height: 1.35; }
-h5 { font-size: 1.7rem; line-height: 1.5; }
-h6 { font-size: 1.5rem; line-height: 1.5; }
-p  { font-size: 1.1rem; line-height: 1.5;}
-blockquote  { font-size: 1.1rem; line-height: 1.5;}
-li  { font-size: 1.1rem; }
+p {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 4.0rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 3.0rem;
+    line-height: 1.25;
+}
+
+h3 {
+    font-size: 2.0rem;
+    line-height: 1.3;
+}
+
+h4 {
+    font-size: 1.8rem;
+    line-height: 1.35;
+}
+
+h5 {
+    font-size: 1.7rem;
+    line-height: 1.5;
+}
+
+h6 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+blockquote {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+li {
+    font-size: 1.1rem;
+}
+
 
 /*all h2 titles*/
+
 h2 {
-  text-align: center;
-  font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
 }
 
 
 /* Padding & Margin */
 
-header, footer  { padding: 2vh 5%; }
+header, footer {
+    padding: 2vh 5%;
+}
 
-section         { padding: 10vh 0%; }
+section {
+    padding: 10vh 0%;
+}
 
-.col,
-[class*=col-]   { padding: 2%; }
+.col, [class*=col-] {
+    padding: 2%;
+}
 
 .margin-0 {
-  margin:0;
-}
-.margin-0-1{
-      margin: 0px 1.5%;
+    margin: 0;
 }
 
-.margin-auto{
-  margin: auto;
+.margin-0-1 {
+    margin: 0px 1.5%;
 }
+
+.margin-auto {
+    margin: auto;
+}
+
+
 /* Other universal styles */
 
-.featured{
-  background-color: #1abc9c; /* featured color */
-  color: white;
+.featured {
+    background-color: #1abc9c;
+    /* featured color */
+    color: white;
 }
+
 .fa.featured {
-  color: #1abc9c; /* featured color */
-  background: none;
+    color: #1abc9c;
+    /* featured color */
+    background: none;
 }
 
 hr {
-  border: none;
-  border-top: 1px solid rgb(245,245,245);
-  margin: 3vh 0;
+    border: none;
+    border-top: 1px solid rgb(245, 245, 245);
+    margin: 3vh 0;
 }
-.previous, .next { /* This is to navigate to the previous and next page of pagination for blogs */
+
+.previous, .next {
+    /* This is to navigate to the previous and next page of pagination for blogs */
     padding: 0 1.5em;
     text-decoration: none;
     color: inherit;
     font-weight: bold;
 }
 
+
 /* ----- HEADER & FOOTER --------------------------- */
+
 nav a {
     text-decoration: none;
     padding: 1em 2em;
@@ -136,124 +215,145 @@ nav a {
 }
 
 nav a:hover {
-  color: #1abc9c; /* featured color */
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+    color: #1abc9c;
+    /* featured color */
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 header {
-  border-bottom: 1px solid rgb(245,245,245);
+    border-bottom: 1px solid rgb(245, 245, 245);
 }
+
 footer {
-  border-top: 1px solid rgb(245,245,245);
+    border-top: 1px solid rgb(245, 245, 245);
 }
 
 footer nav a {
-  padding: 0.5em 1em;
+    padding: 0.5em 1em;
 }
 
-footer nav .fa,
-.social-share nav .fa {
-  padding: 0 1em 0 0;
+footer nav .fa, .social-share nav .fa {
+    padding: 0 1em 0 0;
 }
 
 .footer-nav {
-  text-align: center;
+    text-align: center;
 }
 
 .footer-logo {
-  width: auto;
-  height: 60px;
-  display: inline-block;
-  margin-right: 10%;
-
+    width: auto;
+    height: 60px;
+    display: inline-block;
+    margin-right: 10%;
 }
-.pure-drawer { /* pop-out hamburger menu */
-  padding: 5em 3%;
+
+.pure-drawer {
+    /* pop-out hamburger menu */
+    padding: 5em 3%;
 }
 
 .mob-nav a {
-  display: block;
-  padding: 0.5em;
+    display: block;
+    padding: 0.5em;
 }
+
 
 /* ----- MODULAR ELEMENTS --------------------------- */
+
 .banner {
-  background-color: #1abc9c; /* featured-color */
-  background-size: cover;
-  background-position: center;
-  min-height:90vh;
+    background-color: #1abc9c;
+    /* featured-color */
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
 }
 
-.box-img { /* This can be used for any col or div that you want filled with a background image. */
-  background-color: grey; /* this is a fallback incase the image doesn't load */
-  background-image: url('/images/yoga-1.jpg'); /* if you are adding a unique image to every one you can remove this */
-  background-size: cover;
-  background-position: center;
-  min-height: 20vh;
+.box-img {
+    /* This can be used for any col or div that you want filled with a background image. */
+    background-color: grey;
+    /* this is a fallback incase the image doesn't load */
+    background-image: url('/images/yoga-1.jpg');
+    /* if you are adding a unique image to every one you can remove this */
+    background-size: cover;
+    background-position: center;
+    min-height: 20vh;
 }
+
 a.category {
-  padding:0.3em;
-  text-decoration: none;
-  border: 1px solid grey;
-  border-radius: 3px;
-  color: grey;
-  margin: 0.2em;
+    padding: 0.3em;
+    text-decoration: none;
+    border: 1px solid grey;
+    border-radius: 3px;
+    color: grey;
+    margin: 0.2em;
 }
+
 
 /* Buttons */
- button, /* button is an element snipcart uses */
-.button,
-.button-inverted {
-  background-color: #1abc9c; /* featured color */
-  border: none;
-  border-radius: 5px;
-  padding: 0.5em 3em;
-  margin: 1em auto;
-  display: inline-block;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: white;
+
+button,
+/* button is an element snipcart uses */
+
+.button, .button-inverted {
+    background-color: #1abc9c;
+    /* featured color */
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 3em;
+    margin: 1em auto;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
 }
+
 .button-inverted {
     border: 2px solid white;
     color: white;
 }
-.button:hover,
-.button-inverted:hover {
-  font-weight: semi-bold;
+
+.button:hover, .button-inverted:hover {
+    font-weight: semi-bold;
 }
+
+
 /*used on homepage and blog post*/
+
 .buttoncenter {
-  display: block;
-  width: 20vw;
-  margin: 4vh auto;
-  text-align: center;
+    display: block;
+    width: 20vw;
+    margin: 4vh auto;
+    text-align: center;
 }
 
 
 /*Testimonial Section*/
+
 .testimonial1 {
-  background-image: url(/images/testimonial1.jpg)
+    background-image: url(/images/testimonial1.jpg)
 }
+
 .testimonial2 {
-  background-image: url(/images/testimonial2.jpg)
+    background-image: url(/images/testimonial2.jpg)
 }
 
 .testimonial3 {
-  background-image: url(/images/testimonial3.jpg)
+    background-image: url(/images/testimonial3.jpg)
 }
 
+
 /* Shop Elements */
+
 .product-loop a {
-  color: inherit;
-  text-decoration: none;
-  width: 100%;
-  margin: 0;
+    color: inherit;
+    text-decoration: none;
+    width: 100%;
+    margin: 0;
 }
 
 .product-loop .box-img {
-  min-height: 30vh;
+    min-height: 30vh;
 }
 
 .product-loop h3 {
@@ -262,172 +362,205 @@ a.category {
     margin-bottom: 0;
 }
 
+
 /* Customising the snipcart pop-up */
-.snip-layout .snip-header,
-.snip-layout .snip-footer {
-  background-color:  #1abc9c; /* featured color */
+
+.snip-layout .snip-header, .snip-layout .snip-footer {
+    background-color: #1abc9c;
+    /* featured color */
 }
+
 .snip-layout .snip-footer__copyright {
-  color: white;
+    color: white;
 }
+
 
 /* Blog elements */
-.blog-loop a {
-  color: inherit;
-  text-decoration: none;
-  width: 100%;
-  margin: 0;
 
+.blog-loop a {
+    color: inherit;
+    text-decoration: none;
+    width: 100%;
+    margin: 0;
 }
-.blog-loop img,
-.post-body img {
+
+.blog-loop img, .post-body img {
     margin-bottom: 2vh;
 }
+
 .post-body {
-  padding-right: 3%;
+    padding-right: 3%;
 }
 
 .post-meta {
-  font-size: 0.9rem;
+    font-size: 0.9rem;
 }
 
-.sidebar > div {
-  border: 1px solid rgb(245,245,245);
-  padding: 2rem;
-  margin: 2vh 0;
+.sidebar>div {
+    border: 1px solid rgb(245, 245, 245);
+    padding: 2rem;
+    margin: 2vh 0;
 }
+
 blockquote {
-  border-left: 2px solid rgb(245,245,245);
-  margin-left: 3%;
-  padding-left: 3%;
-  font-weight: 600;
-  color: rgb(90,90,95);
+    border-left: 2px solid rgb(245, 245, 245);
+    margin-left: 3%;
+    padding-left: 3%;
+    font-weight: 600;
+    color: rgb(90, 90, 95);
 }
+
+
 /* Lists */
-ul      { list-style: circle inside; }
-ol      { list-style: decimal inside;}
-ol, ul  { padding-left: 0;
-          margin-top: 0; }
-li      { margin-bottom: 0.5rem; }
+
+ul {
+    list-style: circle inside;
+}
+
+ol {
+    list-style: decimal inside;
+}
+
+ol, ul {
+    padding-left: 0;
+    margin-top: 0;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
 
 /* ----- FORMS --------------------------- */
 
-input,
-textarea {
-  border-style: solid;
-  border: 1px solid grey;
-  padding: 0.8em;
-  font-family: 'Work Sans'; /* Site Font */
-  font-size: 1em;
-  display: block;
-  width: 100%;
-  margin: 1em auto;
-  vertical-align: top;
+input, textarea {
+    border-style: solid;
+    border: 1px solid grey;
+    padding: 0.8em;
+    font-family: 'Work Sans';
+    /* Site Font */
+    font-size: 1em;
+    display: block;
+    width: 100%;
+    margin: 1em auto;
+    vertical-align: top;
 }
+
 textarea {
-  min-height: 7em;
+    min-height: 7em;
 }
+
 input[type="submit"] {
-  width: auto;
-  display: block;
-  background-color: #1abc9c; /* featured color */
+    width: auto;
+    display: block;
+    background-color: #1abc9c;
+    /* featured color */
 }
 
 form [class*=col-] {
-  padding: 1%;
+    padding: 1%;
 }
+
 
 /* ------------ BACKGROUND IMAGES --------------- */
 
 #intro-banner {
-  background-image: url('/images/banner1.jpg'); /* This is just an axample */
+    background-image: url('/images/banner1.jpg');
+    /* This is just an axample */
 }
 
+
 /*------- Media Queries ------------------------*/
+
 @media(max-width:800px) {
+    /* --- General Responsive Helpers ----*/
+    .mob-hide {
+        display: none!important;
+    }
+    .mob-show {
+        display: block;
+    }
+    /* These classes flip the order of the columns on a mobile layout so that we don't have two images touching. Try commenting them out and see the difference */
+    .mob-flip {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+    .mob-flip div {
+        width: 100%;
+        /* This fixes a flexbox bug */
+    }
+    /* ------ General Mobile Styles ---------*/
+    /* This aligns everything to center on mobile, this is purely slylistic, remove or adjust to suit your design */
+    body, .left, .right {
+        text-align: center;
+    }
+    /* This adjusts the padding on all columns, this is purely slylistic, adjust to suit your design. */
+    /* [class*=col-] is a fancy selector that selects everything class that contains col- including col-3, col-4 etc. */
+    .col, [class*=col-] {
+        padding: 1rem;
+    }
+    textarea {
+        margin: 0;
+    }
+}
 
-  /* --- General Responsive Helpers ----*/
 
-  .mob-hide {
-      display: none!important;
-  }
-  .mob-show {
-    display: block;
-  }
+/* End media query */
 
-  /* These classes flip the order of the columns on a mobile layout so that we don't have two images touching. Try commenting them out and see the difference */
-  .mob-flip {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: reverse;
-          -ms-flex-direction: column-reverse;
-              flex-direction: column-reverse;
-  }
-  .mob-flip div {
-      width: 100%; /* This fixes a flexbox bug */
-  }
-
-  /* ------ General Mobile Styles ---------*/
-  /* This aligns everything to center on mobile, this is purely slylistic, remove or adjust to suit your design */
-  body,
-  .left,
-  .right {
-    text-align: center;
-  }
-  /* This adjusts the padding on all columns, this is purely slylistic, adjust to suit your design. */
-  /* [class*=col-] is a fancy selector that selects everything class that contains col- including col-3, col-4 etc. */
-  .col,
-  [class*=col-] {
-    padding: 1rem;
-  }
-  textarea {
-    margin: 0;
-  }
-
-}/* End media query */
 
 /* ------ MY STYLES START HERE ---------*/
 
 header {
-  text-align: center;
+    text-align: center;
 }
 
+
 /* social nav */
+
 header .logo {
-  max-height: 8.5rem;
-  max-width: 30rem;
-  margin: 70px 0.5em 0;
+    max-height: 8.5rem;
+    max-width: 30rem;
+    margin: 70px 0.5em 0;
 }
 
+
 /* social nav */
+
 .social-nav {
-  text-align: right;
+    text-align: right;
 }
+
 
 /* top nav */
+
 .top-nav {
-  height: 10vh;
+    height: 10vh;
 }
 
 .top-nav .left {
-  text-align: right;
+    text-align: right;
 }
 
 .top-nav .right {
-  text-align: left;
+    text-align: left;
 }
 
 .contact-form {
-  display: block;
-  text-align: center;
-  padding: 0 290px;
-
+    display: block;
+    text-align: center;
+    padding: 0 290px;
 }
+
+
 /*service list homepage*/
+
 .service-list {
     padding: 0 3%;
 }
 
-.service-list li{
+.service-list li {
     margin-bottom: 0.5rem;
     color: #1abc9c;
     font-size: 1.5rem;
@@ -435,18 +568,19 @@ header .logo {
     font-weight: 100;
     padding: 0 6%;
     padding-bottom: 2rem;
-
 }
 
+
 /* about */
+
 .about-page {
-  padding: 10vh 5%;
+    padding: 10vh 5%;
 }
 
 .about-page h1 {
-  margin: 5% 0 0;
+    margin: 5% 0 0;
 }
 
 .about-padding {
-  padding: 0 2em;
+    padding: 0 2em;
 }
