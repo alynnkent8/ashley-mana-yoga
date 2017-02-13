@@ -415,7 +415,28 @@ header .logo {
   text-align: left;
 }
 
-.contact-font {
-  font-family: 'Courgette', cursive;
+.contact-form {
+  display: block;
+  text-align: center;
+  padding: 0 290px;
 
+}
+/*service list homepage*/
+.service-list {
+    padding: 0 3%;
+}
+
+.service-list li{
+    margin-bottom: 0.5rem;
+    color: #1abc9c;
+    font-size: 1.5rem;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+    padding: 0 6%;
+    padding-bottom: 2rem;
+
+}
+
+.about-padding {
+  padding: 0 2em;
 }

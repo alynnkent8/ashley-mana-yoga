@@ -24,16 +24,16 @@ featured-image_path: /uploads/pr-photos-6472.jpg
     <div class="grid">
         <div class="col-6">
             <div class="profile-imgs owl-carousel owl-theme">
-                <div class="item"><img src="/images/portrait1.jpg" alt="portrait"></div>
-                <div class="item"><img src="/images/portrait2.jpg" alt="portrait"> </div>
-                <div class="item"><img src="/images/portrait3.jpg" alt="portrait"></div>
-                <div class="item"><img src="/images/portrait1.jpg" alt="portrait"></div>
-                <div class="item"><img src="/images/portrait2.jpg" alt="portrait"> </div>
-                <div class="item"><img src="/images/portrait3.jpg" alt="portrait"></div>
+                <div class="item"><img src="/images/aboutme1.jpg" alt="aboutme"></div>
+                <div class="item"><img src="/images/aboutme2.jpg" alt="aboutme"> </div>
+                <div class="item"><img src="/images/aboutme3.jpg" alt="aboutme"></div>
+                <div class="item"><img src="/images/aboutme4.jpg" alt="aboutme"></div>
+                <div class="item"><img src="/images/aboutme5.jpg" alt="aboutme"> </div>
+                <div class="item"><img src="/images/aboutme6.jpg" alt="aboutme"></div>
             </div>
         </div>
         <div class="grid col-6">
-            <div>
+            <div class="about-padding">
                 <p>Ashley grew up in Saratoga Springs, NY, where she began practicing yoga in 2006 under the guidance of Yoga Therapist Arletta Behan. While growing up, Ashley’s mother brought her to yoga classes and over the years she she fell in love with
                     the practice and started to become curious how to help people heal, both physically and emotionally. </p>
 
@@ -49,14 +49,11 @@ featured-image_path: /uploads/pr-photos-6472.jpg
 </section>
 
 <!-- THIRD BANNER SECTION BLOG!  -->
-<section id="blog">
-    <div>
+<section id="blog" class="featured">
         <h2>Blog</h2>
 
         <!-- add gridlex and linkable images with hover and padding -->
-
-        <section class=" no padding featured">
-            <div class="grid blog-loop margin-0-1">
+            <div class="grid blog-loop margin-0-1 ">
                 {% for post in site.posts limit:6 %}
                 <div class="col-4_sm-12">
                     <a href="{{post.url}}">
@@ -69,50 +66,38 @@ featured-image_path: /uploads/pr-photos-6472.jpg
                 </div>
                 {% endfor %}
             </div>
-        </section>
         <a class="button-inverted buttoncenter" href="blog.html"> More on the blog </a>
-
-    </div>
 </section>
 
 
 
 <!-- FITH ICON SERVICES GRID SECTION ---->
-<section class="centered">
-    <h2> Services </h2>
-    <div class="grid-equalHeight">
+<section>
+  <h2 class="centered"> Services </h2>
+  <div class="grid-2_sm-1 col-6">
+      <div class="col">
 
-        <div class="col-4_sm-12">
-            <i class="fa fa-leaf"></i>
-            <h3> Private Yoga Sessions </h3>
-            <img>
-        </div>
+      <ul class="service-list">
+        <li> Health and Lifestyle Coaching </li>
+        <li> Standup Paddle Board Yoga </li>
+        <li> Thai Massage Workshops </li>
+        <li> Private Yoga Sessions </li>
+        <li> Group Yoga Classes </li>
+        <li> Massage Therapy </li>
+        <li> Corporate Yoga </li>
+      </ul>
+    </div>
 
-        <div class="col-4_sm-12">
-            <i class="fa fa-leaf"></i>
-            <h3> Massage Therapy </h3>
-        </div>
+          <div class="col">
+              <div class="profile-imgs owl-carousel owl-theme">
+                  <div class="item"><img src="/images/services1.jpg" alt="services"></div>
+                  <div class="item"><img src="/images/services2.jpg" alt="services"> </div>
+                  <div class="item"><img src="/images/services3.jpg" alt="services"></div>
+                  <div class="item"><img src="/images/services4.jpg" alt="services"></div>
+                  <div class="item"><img src="/images/services5.jpg" alt="services"> </div>
+                  <div class="item"><img src="/images/services6.jpg" alt="services"></div>
+              </div>
 
-        <div class="col-4_sm-12">
-            <i class="fa fa-leaf"></i>
-            <h3> Health and Lifestyle Coaching </h3>
-        </div>
-
-        <div class="col-4_sm-12">
-            <i class="fa fa-leaf"></i>
-            <h3> Group Yoga Classes </h3>
-              <img src="/images/groupyoga.jpg">
-        </div>
-
-        <div class="col-4_sm-12">
-            <i class="fa fa-leaf"></i>
-            <h3> Thai Massage Workshops </h3>
-        </div>
-
-        <div class="col-4_sm-12">
-            <i class="fa fa-leaf"></i>
-            <h3> Corporate Yoga </h3>
-        </div>
 
       </div>
     </section>
@@ -159,10 +144,11 @@ featured-image_path: /uploads/pr-photos-6472.jpg
 
 
         <!-- SEVENTH SECTION CONTACT INFO -->
-        <section class="centered contact-font">
+        <section class="centered">
             <h2> Contact </h2>
-              <h4>Thanks for stopping by and being a part of the journey! If you have any questions or would like to collaborate on projects, workshops, retreats leave me a comment below!</h4>
-
+            <div class="contact-form">
+              <p>Thanks for stopping by and being a part of the journey! If you have any questions or would like to collaborate on projects, workshops, retreats leave me a comment below!</p>
+              </div>
               <div>
             {% include contact-form.html %}
             </div>
