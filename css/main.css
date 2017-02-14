@@ -17,7 +17,7 @@ Website Colours: List colour hex codes here for reference
 /* ---- CSS RESET --------------------------- */
 
 * {
-    margin: 1;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -36,6 +36,7 @@ h1 {
     display: block;
     /* This overrides a quirk with gridlex where contents inside of equal height containers become columns themselves */
 }
+
 
 
 /* ---- GENERAL HELPER CLASSES --------------------------- */
@@ -246,6 +247,12 @@ footer nav .fa, .social-share nav .fa {
     height: 60px;
     display: inline-block;
     margin-right: 10%;
+}
+
+.footer-logo-last {
+  width: auto;
+  height: 60px;
+  display: inline-block;
 }
 
 .pure-drawer {
@@ -462,6 +469,7 @@ form [class*=col-] {
 }
 
 
+
 /* ------------ BACKGROUND IMAGES --------------- */
 
 #intro-banner {
@@ -522,9 +530,12 @@ header {
 header .logo {
     max-height: 8.5rem;
     max-width: 30rem;
-    margin: 70px 0.5em 0;
+    margin: -30px 0.5em 0;
 }
 
+.logo-mobile {
+  width: 100px;
+}
 
 /* social nav */
 
@@ -536,7 +547,7 @@ header .logo {
 /* top nav */
 
 .top-nav {
-    height: 10vh;
+    height: 60px;
 }
 
 .top-nav .left {

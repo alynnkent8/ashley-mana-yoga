@@ -22,7 +22,7 @@ featured-image_path: /uploads/pr-photos-6472.jpg
 
     <!-- Set up your HTML -->
     <div class="grid">
-        <div class="col-6">
+        <div class="col-6_sm-12">
             <div class="profile-imgs owl-carousel owl-theme">
                 <div class="item"><img src="/images/aboutme1.jpg" alt="aboutme"></div>
                 <div class="item"><img src="/images/aboutme2.jpg" alt="aboutme"> </div>
@@ -32,7 +32,7 @@ featured-image_path: /uploads/pr-photos-6472.jpg
                 <div class="item"><img src="/images/aboutme6.jpg" alt="aboutme"></div>
             </div>
         </div>
-        <div class="grid col-6">
+        <div class="grid col-6_sm-12">
             <div class="about-padding">
                 <p>Ashley grew up in Saratoga Springs, NY, where she began practicing yoga in 2006 under the guidance of Yoga Therapist Arletta Behan. While growing up, Ashley’s mother brought her to yoga classes and over the years she she fell in love with
                     the practice and started to become curious how to help people heal, both physically and emotionally. </p>
@@ -144,6 +144,9 @@ featured-image_path: /uploads/pr-photos-6472.jpg
 
 
         <!-- SEVENTH SECTION CONTACT INFO -->
-        {% include contact-form.html %}
+        <section>
+          <h2> Contact </h2>
+          {% include contact-form.html %}
+        </section>
 
         {% include instagram.html %}
