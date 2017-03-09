@@ -582,8 +582,10 @@ header .logo {
 .contact-form {
     display: block;
     text-align: center;
-    padding: 0 290px;
+    padding:0 290px;
 }
+
+
 
 
 /*service list homepage*/
