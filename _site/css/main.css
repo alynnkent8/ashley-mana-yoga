@@ -181,13 +181,13 @@ section {
 /* Other universal styles */
 
 .featured {
-    background-color: #1abc9c;
+    background-color: #ffffff;
     /* featured color */
     color: white;
 }
 
 .fa.featured {
-    color: #1abc9c;
+    color: #A8D3FF;
     /* featured color */
     background: none;
 }
@@ -216,7 +216,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #1abc9c;
+    color: #A8D3FF;
     /* featured color */
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
@@ -275,7 +275,7 @@ footer nav .fa, .social-share nav .fa {
 /* ----- MODULAR ELEMENTS --------------------------- */
 
 .banner {
-    background-color: #1abc9c;
+    background-color: #ffffff;
     /* featured-color */
     background-size: cover;
     background-position: center;
@@ -308,8 +308,8 @@ a.category {
 button,
 /* button is an element snipcart uses */
 
-.button, .button-inverted {
-    background-color: #1abc9c;
+.button-inverted {
+    background-color: rgba(255);
     /* featured color */
     border: none;
     border-radius: 5px;
@@ -321,7 +321,22 @@ button,
     color: white;
 }
 
+.button {
+
+    /* featured color */
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.5em 3em;
+    margin: 1em auto;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+
 .button-inverted {
+
     border: 2px solid white;
     color: white;
 }
@@ -379,7 +394,7 @@ button,
 /* Customising the snipcart pop-up */
 
 .snip-layout .snip-header, .snip-layout .snip-footer {
-    background-color: #1abc9c;
+    background-color: #ffffff;
     /* featured color */
 }
 
@@ -466,7 +481,7 @@ textarea {
 input[type="submit"] {
     width: auto;
     display: block;
-    background-color: #1abc9c;
+    background-color: #ffffff;
     /* featured color */
 }
 
@@ -579,7 +594,7 @@ header .logo {
 
 .service-list li {
     margin-bottom: 0.5rem;
-    color: #1abc9c;
+    color: #ffffff;
     font-size: 1.5rem;
     font-family: 'Work Sans', sans-serif;
     font-weight: 100;
