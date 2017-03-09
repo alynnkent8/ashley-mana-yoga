@@ -265,6 +265,12 @@ footer nav .fa, .social-share nav .fa {
     padding: 0.5em;
 }
 
+/*Copyright color*/
+.half-black {
+  color: #B8B8B8;
+  text-align: center;
+}
+
 
 /* ----- MODULAR ELEMENTS --------------------------- */
 
