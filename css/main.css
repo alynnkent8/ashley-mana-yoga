@@ -618,3 +618,8 @@ header .logo {
 .about-padding {
     padding: 0 2em;
 }
+
+/*MAP contact form*/
+.embed-container-maps {
+  pointer-events: none;
+}
