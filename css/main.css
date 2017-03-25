@@ -619,6 +619,26 @@ header .logo {
     padding: 0 2em;
 }
 
+.aboutme-quote {
+  font-family: 'Space Mono', monospace;
+  line-height: 5px;
+  text-align: center;
+}
+
+.aboutme-aloha {
+  font-family: 'Tangerine', cursive;
+  font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
 /*MAP contact form*/
 .embed-container-maps {
   pointer-events: none;
